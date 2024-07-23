@@ -1,5 +1,7 @@
 package org.productos.spring.java.productos.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -9,6 +11,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
+@Entity
+@Table(name = "products")
 
 public class Product {
 
